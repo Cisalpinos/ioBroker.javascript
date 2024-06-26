@@ -110,7 +110,7 @@ const styles = theme => ({
         background: '#ff9900',
     },
     textIcon: {
-        marginLeft: theme.spacing(1),
+        marginLeft: 8,
     },
     tabIcon: {
         width: 24,
@@ -157,8 +157,8 @@ const styles = theme => ({
     },
     notRunning: {
         color: '#ffbc00',
-        marginRight: theme.spacing(1),
-        marginLeft: theme.spacing(1),
+        marginRight: 8,
+        marginLeft: 8,
     },
     tabButton: {
         minHeight: 48,

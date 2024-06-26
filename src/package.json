@@ -5,15 +5,15 @@
     "dependencies": {
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@craco/craco": "^7.1.0",
+        "@devbookhq/splitter": "^1.4.2",
         "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
         "@icons/material": "^0.4.1",
-        "@iobroker/adapter-react-v5": "5.0.8",
+        "@iobroker/adapter-react-v5": "^6.0.6",
         "@iobroker/type-detector": "^3.0.5",
         "@mui/icons-material": "^5.15.20",
-        "@mui/material": "5.15.20",
-        "@mui/styles": "5.15.20",
-        "@mui/x-date-pickers": "^7.7.0",
-        "@sentry/browser": "^8.10.0",
+        "@mui/material": "^5.15.20",
+        "@mui/x-date-pickers": "^7.7.1",
+        "@sentry/browser": "^8.11.0",
         "@sentry/integrations": "^7.114.0",
         "craco-module-federation": "^1.1.0",
         "eslint": "^8.57.0",
@@ -42,7 +42,6 @@
         "react-json-view": "^1.21.3",
         "react-monaco-editor": "^0.55.0",
         "react-scripts": "^5.0.1",
-        "react-splitter-layout": "^4.0.0",
         "react-text-mask": "^5.5.0",
         "react-treeview-mui": "^0.1.2",
         "reactour": "^1.19.4",
@@ -53,10 +52,12 @@
     "scripts": {
         "start": "craco start",
         "old-start": "react-scripts start",
-        "lint": "eslint --fix --ext .js,.jsx src",
         "build": "craco build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "lint": "eslint --fix --ext .js,.jsx,.tsx src",
+        "check-ts": "tsc --noEmit --checkJS false",
+        "tsc": "tsc --project tsconfig.json"
     },
     "eslintConfig": {
         "extends": "react-app"

@@ -9,11 +9,11 @@ module.exports = {
         'airbnb',
         // 'react-app',
         'plugin:eqeqeq-fix/recommended',
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-        },
+        ecmaFeatures: 'latest',
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
@@ -22,6 +22,7 @@ module.exports = {
         'only-warn',
         'react-hooks',
     ],
+    parser: '@typescript-eslint/parser',
     rules: {
         'arrow-parens': [1, 'as-needed'],
         'react/jsx-indent': 'off',
@@ -78,4 +79,13 @@ module.exports = {
         'object-shorthand': 'off',
         'block-scoped-var': 'off',
     },
+    overrides: [
+        {
+            files: [
+                '*.tsx',
+                '*.js',
+                '*.jsx'
+            ],
+        }
+    ]
 };

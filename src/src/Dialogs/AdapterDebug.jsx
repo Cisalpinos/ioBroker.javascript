@@ -24,7 +24,7 @@ import { I18n } from '@iobroker/adapter-react-v5';
 
 const styles = theme => ({
     buttonIcon: {
-        marginRight: theme.spacing(1),
+        marginRight: 8,
     },
     icon: {
         width: 24,
@@ -38,7 +38,7 @@ const styles = theme => ({
     },
     title: {
         fontWeight: 'bold',
-        marginTop: theme.spacing(2),
+        marginTop: 16,
     }
 });
 

@@ -29,7 +29,7 @@ const styles = theme => ({
         height: '95%',
     },
     typography: {
-        padding: theme.spacing(2),
+        padding: 16,
     },
     overflowY: {
         overflowY: 'hidden',

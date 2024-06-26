@@ -37,7 +37,7 @@ const styles = theme => ({
     complexity: {
         fontWeight: 'bold',
         fontStyle: 'italic',
-        marginBottom: theme.spacing(1),
+        marginBottom: 8,
     },
 });
 
